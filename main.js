@@ -45,7 +45,8 @@ async function findLyric(Artist,songTitle){
     document.getElementById("lyric").innerHTML = "404 error.lyric not found"
    }else{
     document.getElementById("songTitleBar").innerHTML = `${songTitle}`
-    document.getElementById("artist").innerHTML = `-${Artist}`
+    document.getElementById("artist").innerHTML = `Artist-${Artist}`
+    document.getElementById("artist").style.color = "cyan";
     document.getElementById("lyric").innerHTML = data.lyrics; 
    }
 }
